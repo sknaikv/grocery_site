@@ -391,6 +391,11 @@ body{
     font-size: 1rem;
     font-weight: 550;
     cursor: pointer;
+    transition: 0.9s;
+}
+
+.about-mid-btn:hover{
+    background-color: #FF7C08;
 }
 
 
@@ -495,7 +500,6 @@ body{
 .hero_left_btns>button{
     padding: 1.1rem 2rem;
     border: none;
-    background: red;
     border-radius: 0.3rem;
     color: white;
     font-size: 1rem;
