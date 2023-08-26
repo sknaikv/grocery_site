@@ -645,7 +645,7 @@ body{
     width: 100%;
     height: auto;
     /* border: 1px solid red; */
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
 }
 
 #top_category_section>h3{
@@ -899,18 +899,159 @@ body{
 
 
 
+/* brand_products section */
+
+#brand_products{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #EEF6EB;
+
+}
+
+#brand_products>img{
+    padding-top: 9rem;
+}
+
+.brand_heading{
+    text-align: center;
+    line-height: 2;
+}
+
+.product_list{
+    display: grid;
+    flex-direction: column;
+    width: 80%;
+    margin: 1rem auto;
+    height: auto;
+    /* border: 1px solid red; */
+    gap: 0;
+    grid-template-columns:50% 50%;
+}
+
+.product_box{
+    display: flex;
+    margin: 1rem 0;
+    height: auto;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.3rem;
+    padding: 1rem;
+}
+
+.product_box:nth-child(1){
+    margin-right: 1rem;
+}
+.product_box:nth-child(3){
+    margin-right: 1rem;
+}
+.product_box:nth-child(5){
+    margin-right: 1rem;
+}
+.product_box:nth-child(7){
+    margin-right: 1rem;
+}
+
+.product_banner{
+    width: 45%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+}
 
 
+.product_img{
+    width: 12vw;
+    height: 9vw;
+    background-color: #EEF6EB;
+    border-radius: 0.3rem;
+}
+
+.product_img>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+}
+
+.product_img::before{
+    content: "";
+    width: 12vw;
+    display: flex;
+    height: 9vw;
+    border-radius: 0.3rem;
+    background-color: #86888d80;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.product_list>.product_box:hover.product_box>.product_img::before{
+    transition: 0.5s;
+    opacity: 1;
+}
 
 
+.product_details{
+    padding: 0.5rem 0.5rem;
+    font-family: Poppins; 
+}
+
+.product_details>h5{
+    cursor: pointer;
+}
+
+.star_box{
+    display: flex;
+    gap: 5px;
+}
+
+.star_box>p{
+    font-size: 0.8rem;
+}
+
+.star_box>ul{
+    display: flex;
+}
+
+.product_banner{
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.banner_text{
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+    line-height: 1.3;
+    /* background-color: blue; */
+}
+
+.banner_text>h2{
+    font-size: 1.8rem;
+}
+
+.banner_text>h4{
+    font-size: 1.5rem;
+}
 
 
+.banner_text>button{
+    margin: 1rem 0;
+}
 
+.banner_text>button:hover{
+    background-color: #6EB356!important;
+}
 
-
-
-
-
+.banner_img{
+    /* background-color: red; */
+    width: 100%;
+    height: 60%;
+}
 
 /* media_queries */
 
