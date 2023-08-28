@@ -429,7 +429,7 @@ body{
 
 #hero_section{
     /* background-color:aliceblue ; */
-    background-image: url("https://grostore-html.themetags.com/assets/img/shapes/texture.png");
+    background-image: url("./img/misc/texture.png");
     background-repeat: repeat;
     width: 100%;
     height: 125vh;
@@ -710,6 +710,24 @@ body{
 
 
 
+/* footer */
+
+#footer_section{
+    margin-top: 10rem;
+    overflow: hidden;
+}
+
+footer{
+    width: 100%;
+    height: 80vh;
+    background-color: #191D28;
+    margin-top: -1rem;
+}
+
+.footer_img{
+    width: 120%;
+    animation: footer_animation 8s backwards infinite;
+}
 
 
 /* media_queries */
