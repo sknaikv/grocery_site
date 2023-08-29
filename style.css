@@ -1483,6 +1483,11 @@ footer>hr{
         margin: auto;
         left: 0;
     }
+    
+    .about-container.active{
+        width: auto;
+        left: 55%;
+    }
 }
 
 @media screen and (max-width:940px){
@@ -1492,12 +1497,13 @@ footer>hr{
     .second-header>ul{
         margin-left: auto;
     }
+    
 }
 
 
 @media screen and (max-width:1030px) and (min-width:800px){
     .top-header>ul>li{
         font-size: 0.7rem;
-        padding: 0 0.5rem;
+        /* padding: 0 0.5rem; */
     }
 }
