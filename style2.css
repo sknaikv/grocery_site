@@ -861,6 +861,7 @@ footer>hr{
 
 
 
+
 /* footer_animations */
 
 .tomato{
@@ -869,35 +870,35 @@ footer>hr{
     animation: leaf_animate 10s linear infinite;
 }
 .tomatoslice{
-    position: relative;
-    float: right;
-    top: 5rem;
+    position: absolute;
+    top: 18rem;
+    right: 3rem;
     animation: 8s ease-in-out 0s infinite normal none running tomatoslice;
 }
 
 @keyframes tomatoslice {
     0%{
-        top: 5rem;
+        top: 18rem;
     }
 
     25%{
-        top: 7rem;
+        top: 20rem;
     }
 
     50%{
-        top: 9rem;
+        top: 22rem;
     }
 
     75%{
-        top: 7rem;
+        top: 20rem;
     }
     100%{
-        top: 5rem;
+        top: 18rem;
     }
 }
 
 .tomatohalf{
-    position: relative;
+    position: absolute;
     float: right;
     top: 28rem;
     animation: 8s ease-in-out 0s infinite normal none running tomatohalf;
@@ -981,9 +982,10 @@ footer>hr{
 }
 
 .pataxs2{
-    position: relative;
+    position: absolute;
     float: right;
     right: 3rem;
+    animation: leaf_animate 10s linear infinite;
 }
 
 
@@ -997,7 +999,7 @@ footer>hr{
 .leaf_footer2{
     /* position: absolute; */
     float: right;
-    position: relative;
+    position: absolute;
     right: 6rem;
     top: 5rem;
     animation: leaf_animation 8s linear infinite;
@@ -1012,20 +1014,6 @@ footer>hr{
     }
 
 }
-
-@keyframes footer_animation{
-    0%{
-        left: 0;
-    }
-   100%{
-    left: -750px;
-   }
-    
-    
-
-   
-}
-
 
 @keyframes footer_animation{
     0%{
