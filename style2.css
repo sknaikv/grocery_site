@@ -712,9 +712,11 @@ body{
 
 
 
+
 /* footer */
 
 #footer_section{
+    position: relative;
     margin-top: 10rem;
     overflow: hidden;
 }
@@ -855,6 +857,173 @@ footer>hr{
     padding: 0.6rem;
     border-radius: 0.3rem;
     background-color: #444444;
+}
+
+
+
+/* footer_animations */
+
+.tomato{
+    position: absolute;
+    left: 5rem;
+    animation: leaf_animate 10s linear infinite;
+}
+.tomatoslice{
+    position: relative;
+    float: right;
+    top: 5rem;
+    animation: 8s ease-in-out 0s infinite normal none running tomatoslice;
+}
+
+@keyframes tomatoslice {
+    0%{
+        top: 5rem;
+    }
+
+    25%{
+        top: 7rem;
+    }
+
+    50%{
+        top: 9rem;
+    }
+
+    75%{
+        top: 7rem;
+    }
+    100%{
+        top: 5rem;
+    }
+}
+
+.tomatohalf{
+    position: relative;
+    float: right;
+    top: 28rem;
+    animation: 8s ease-in-out 0s infinite normal none running tomatohalf;
+}
+
+@keyframes tomatohalf {
+    0%{
+        right: 3rem;
+    }
+
+    25%{
+        right: 6rem;
+    }
+
+    50%{
+        right: 9rem;
+    }
+
+    75%{
+        right: 6rem;
+    }
+    100%{
+        right: 3rem;
+    }
+}
+
+.patalg{
+    position: absolute;
+    left: 6rem;
+    top: 9rem;
+    animation: 8s ease-in-out 0s infinite normal none running patalg;
+}
+
+@keyframes patalg {
+    0%{
+        left: 6rem;
+    }
+
+    25%{
+        left: 9rem;
+    }
+
+    50%{
+        left: 12rem;
+    }
+
+    75%{
+        left: 9rem;
+    }
+    100%{
+        left: 6rem;
+    }
+}
+
+.pataxs{
+    position: absolute;
+    left: 3rem;
+    top: 22rem;
+    animation: 8s ease-in-out 0s infinite normal none running pataxs;
+}
+
+@keyframes pataxs {
+    0%{
+        top: 22rem;
+    }
+
+    25%{
+        top: 24rem;
+    }
+
+    50%{
+        top: 26rem;
+    }
+
+    75%{
+        top: 24rem;
+    }
+    100%{
+        top: 22rem;
+    }
+}
+
+.pataxs2{
+    position: relative;
+    float: right;
+    right: 3rem;
+}
+
+
+
+.leaf_footer{
+    position: absolute;
+    left: 3rem;
+    bottom: 4rem;
+    animation: leaf_animation 8s linear infinite;
+}
+.leaf_footer2{
+    /* position: absolute; */
+    float: right;
+    position: relative;
+    right: 6rem;
+    top: 5rem;
+    animation: leaf_animation 8s linear infinite;
+}
+
+@keyframes leaf_animation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes footer_animation{
+    0%{
+        left: 0;
+    }
+   100%{
+    left: -750px;
+   }
+    
+    
+
+   
 }
 
 
