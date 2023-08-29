@@ -43,3 +43,8 @@ close_btn_about.addEventListener("click",()=>{
 // });
 
 // const hiddenelements = document.querySelectorAll(".active");
+
+
+const observer = new IntersectionObserver(entries =>{
+    
+})
