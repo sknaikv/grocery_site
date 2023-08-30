@@ -100,6 +100,10 @@ a{
     border-radius: 0.5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+/* 
+.second_head_wrapper{
+    display: none;
+} */
 
 .menubtn{
     content: "";
@@ -493,6 +497,7 @@ a{
 }
 
 .mango_img{
+    width: max-content;
     z-index: -10;
     animation: leaf_animate 10s linear infinite;
 }
@@ -579,7 +584,7 @@ a{
 
 .vegies_img{
     position: absolute;
-    width: 32rem;
+    width: 30rem;
     height: 37rem;
     left: 5rem;
     z-index: 10;
@@ -626,9 +631,14 @@ a{
 
 .leaf{
     position: absolute;
-    left: 27rem;
+    left: 25rem;
+    width: 20vw;
     top: -2rem;
     animation: leaf_animate 10s linear infinite;
+}
+
+.leaf>img{
+    width: 100%;
 }
 
 @keyframes leaf_animate{
@@ -688,8 +698,9 @@ a{
 
 .category_boxes_container>.box{
     position: relative;
-    width: 25vw;
-    height: 13vw;
+    width: auto;
+    height: auto;
+    min-width: 12rem;
     margin: 1rem;
     border: 1px solid #8080801c;
     border-radius: 0.5rem;
@@ -1430,7 +1441,7 @@ footer>hr{
 
 
 
-@media screen and (max-width:1300px) and (min-width:800px){
+@media screen and (max-width:1300px){
         .second-header>ul>li:nth-child(3){
             display: none;
         }
@@ -1455,7 +1466,7 @@ footer>hr{
         }
 }
 
-@media screen and (max-width:1250px) and (min-width:800px){
+@media screen and (max-width:1250px){
     #hero_section{
         flex-direction: column;
         align-items: center;
@@ -1472,9 +1483,14 @@ footer>hr{
     .hero_left{
         width: auto;
     }
+
+    .leaf{
+        top: -30rem;
+        left: 30rem;
+    }
 }
 
-@media screen and (max-width:1110px) and (min-width:800px){
+@media screen and (max-width:1110px){
     .second-header>ul{
         margin-left: auto;
     }
@@ -1501,9 +1517,262 @@ footer>hr{
 }
 
 
-@media screen and (max-width:1030px) and (min-width:800px){
+@media screen and (max-width:1030px) and (min-width:600px){
     .top-header>ul>li{
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         /* padding: 0 0.5rem; */
+    }
+}
+
+
+@media screen and (max-width:700px) and (min-width:200px){
+    .vegies_img{
+        
+    }
+}
+
+@media screen and (max-width:999px){
+    .second-header{
+        top: 0;
+        box-shadow: none;
+        height: 5rem;
+    }
+    .top-header{
+        display: none;
+    }
+
+    .second_head_wrapper{
+        display: block;
+        position: sticky;
+        top: 0;
+        height: 5rem;
+        z-index: 100;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
+
+
+@media screen and (max-width:750px){
+    .orange{
+        display: none;
+    }
+
+    .hero_right{
+        width: 100%;
+    }
+
+    .second-header>ul>li:nth-child(1){
+        display: none;
+    }
+    .second-header>ul>li:nth-child(11){
+        display: none;
+    }
+    .second-header>ul>li:nth-child(12){
+        display: none;
+    }
+    .second-header>ul>li:nth-child(14){
+        display: none;
+    }
+}
+
+@media screen and (max-width:610px){
+    .vegies_img{
+        width: 25rem;
+        height: auto;
+    }
+
+    .leaf{
+        left: 22rem;
+    }
+
+    .circle_motion{
+        width: 25rem;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width:680px) and (min-width:550px){
+    .about-container.active{
+        width: auto;
+        left: 45%;
+    }
+
+}
+
+@media screen and (max-width:550px) and (min-width:450px){
+    .about-container.active{
+        width: auto;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width:599px){
+    .category_boxes_container>.box{
+        min-width: 10rem;
+    }
+    
+
+}
+
+@media screen and (max-width:790px){
+    .product_img{
+        min-width: 8rem;
+        height: auto;
+    }
+
+    .product_list{
+        display: flex;
+    }
+
+    .product_box:nth-child(n){
+        margin-right: 0rem;
+    }
+
+    .hero_right{
+        padding: 2rem 0rem;
+    }
+}
+
+@media screen and (max-width:550px){
+    .product_box:nth-child(n){
+        margin-right: 0rem;
+    }
+
+    .hero_handles{
+        display: none;
+    }
+
+    .hero_left{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:550px){
+    .vegies_img{
+        width: 20rem;
+    }
+
+    .circle_motion{
+        width: 20rem;
+    }
+
+    .hero_left{
+        margin: 0 2rem;
+    }
+  
+
+    .product_box{
+        display: block;
+        width: max-content;
+    }
+
+    .product_list{
+        align-items: center;
+    }
+
+    .product_img{
+        min-width: 20rem;
+    }
+
+    .product_img::before{
+        display: none;
+    }
+
+    .leaf{
+        left: 20rem;
+    }
+
+    .product_banner{
+        width: auto;
+        max-width: 80%;
+    }
+  
+}
+
+@media screen and (max-width:420px){
+    .vegies_img{
+        width: 17rem;
+    }
+
+    .leaves_tree{
+        width: 3.5rem;
+        height: auto;
+
+    }
+
+    .leaves_tree>img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .leaf{
+        left: 15rem;
+    }
+
+    .circle_motion{
+        width: 15rem;
+    }
+
+    #main-wrapper>:nth-child(4){
+        position: relative;
+        top: -4rem;
+    }
+    #main-wrapper>:nth-child(5){
+        position: relative;
+        top: -4rem;
+    }
+    #main-wrapper>:nth-child(6){
+        position: relative;
+        top: -4rem;
+    }
+
+    .product_img{
+        min-width: 15rem;
+    }
+}
+
+@media screen and (max-width:450px){
+    .about-container.active{
+        left: 0%;
+    }
+}
+
+
+@media screen and (max-width:435px){
+    .hero_left_btns>button{
+        font-size: 0.8rem;
+        padding: 1rem 1rem;
+    }
+    
+}
+
+@media screen and (max-width:350px){
+    .vegies_img{
+        width: 14rem;
+    }
+
+    .circle_motion{
+        width: 14rem;
+    }
+
+    .leaves_tree{
+        width: 3rem;
+    }
+
+    .second-header>.logo{
+        width: 8rem!important;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .logo>img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .menubtn{
+        width: 3.5rem;
     }
 }
