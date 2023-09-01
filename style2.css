@@ -744,6 +744,11 @@ body {
 
 /* recent_posts */
 
+.recent_post_wrapper{
+    /* position: relative; */
+    top: 8rem;
+}
+
 #recent_post{
     width: 100%;
     height: auto;
@@ -774,6 +779,8 @@ body {
     margin-top: 2rem;
     justify-content: center;  
 }
+
+
 
 .recent_box{
     border: 1px solid transparent;
