@@ -469,14 +469,29 @@ body {
     margin-right: 2rem;
 }
 
+
+
 .hero_right{
-    border: 1px solid green;
-    width: 30%;
+    /* border: 1px solid green; */
+    width: 35%;
 }
 
-.hero_right>img{
+.right_img>img{
+    border-radius: 0.35rem;
     width: 100%;
     height: 100%;
+}
+
+.right_img>span{
+    position: absolute;
+    display: flex;
+    color: white;
+    z-index: 1;
+    font-family: Poppins;
+    background-color: red;
+    clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0 100%, 0 0);
+    padding: 0 .8rem;
+    border-top-left-radius: 0.3rem;
 }
 
 .img1>img{
@@ -486,6 +501,12 @@ body {
     justify-self: flex-end;
 }
 
+
+.mid_hero_text>p{
+    padding-right: 18rem;
+    font-size: 0.85rem;
+}
+
 .img1{
     display: grid;
     /* position: absolute; */
@@ -493,7 +514,49 @@ body {
 
 .img_text{
     position: relative;
-    top: 5rem;
+    top: 3rem;
+}
+
+.hero_right{
+    /* border: 1px solid red; */
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+}
+
+
+
+
+.right_img{
+    display: grid;
+}
+
+.right_img>img{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.offer_text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 6rem;
+    padding: 0 1.5rem;
+}
+
+.offer_mid_text{
+    position: relative;
+    margin-top:.5rem;
+    padding: 0 1.5rem;
+}
+
+.offer_mid_text>h2{
+    font-size: 1.8rem;
+    color: white;
+    padding-right: 1rem;
+    margin-bottom: .5rem;
 }
 
 .mid_hero_text>button{
@@ -507,6 +570,19 @@ body {
     align-items: center;
     border-radius: 0.3rem;
     margin-bottom: 5rem;
+}
+
+.offer_mid_text>button{
+    padding: 1rem 2.1rem;
+    border: none;
+    background-color: #FF7C08;
+    color: white;
+    font-family: Poppins;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.3rem;
+    margin-top: 1.5rem;
 }
 
 .img_text>button>i{
@@ -1387,11 +1463,19 @@ footer>hr {
 
     .hero_left {
         margin-top: 5rem;
-        width: 60%;
+        width: 100%;
+        margin: auto;
+    }
+
+    .img_text {
+        position: relative;
+        top: 3rem;
+        padding-right: 18rem;
     }
 
     .hero_right {
         margin: auto;
+        width: 45%;
     }
 
     .hero_banners {
@@ -1822,7 +1906,9 @@ footer>hr {
 
 
 
+@media screen and (max-width:1252px) {
 
+}
 
 
 
