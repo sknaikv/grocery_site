@@ -742,6 +742,136 @@ body {
 
 
 
+/* recent_posts */
+
+#recent_post{
+    width: 100%;
+    height: auto;
+    background-color: #FAFAFA;
+}
+
+.recent_post_head{
+    text-align: center;
+}
+
+.recent_post_head>h2{
+    font-size: 2rem;
+}
+
+.recent_post_head>p{
+    /* margin-top: 1rem; */
+    font-family: Poppins;
+    color: #00000083;
+    margin: 1rem 1rem;
+}
+
+.recent_post_boxes{
+    width: 90%;
+    height: auto;
+    display: flex;
+    /* border: 1px solid red; */
+    margin: auto; 
+    margin-top: 2rem;
+    justify-content: center;  
+}
+
+.recent_box{
+    border: 1px solid transparent;
+    width: auto;
+    /* margin-right: 2rem; */
+    margin: 1rem;
+    transition: 0.5s;
+    background-color: #fff;
+    height: max-content;
+    border-radius: 0.3rem;
+}
+
+.recent_box:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.recent_box:hover.recent_img>img{
+    transform: scale(1.1);
+}
+
+.recent_img{
+    /* border: 1px solid black; */
+    height: 38%;
+    width: auto;
+    position: relative;
+    margin-bottom: 1.3rem;
+    cursor: pointer;
+}
+
+.recent_img>img{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+.recent_text{
+    padding: 1rem;
+    padding-right: 2rem;
+}
+
+.recent_text>h2{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.recent_text>p{
+    font-family: Poppins;
+    font-size: 0.9rem;
+    color: #00000098;
+}
+
+.recent_text>span{
+   font-family: Poppins;
+   font-size: 0.85rem;
+   color: #00000098;
+}
+
+.recent_text>i{
+    color: #00000098;
+}
+
+
+.recent_text>button>a{
+    color: #6EB356;
+    font-family: Poppins;
+    transition: 0.35s;
+}
+
+.recent_text>button{
+    padding: 0.8rem 1.2rem;
+    color: #6EB356;
+    border: none;
+    border-radius: 0.2rem;
+    margin: 1.5rem 0;
+    transition: 0.35s;
+}
+
+.recent_text>button:hover{
+    background-color: #6EB356;
+    color: white;
+}
+
+.recent_text>button:hover>a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer */
 
@@ -1565,6 +1695,23 @@ footer>hr {
 }
 
 
+
+
+@media screen and (max-width:1050px) and (min-width:700px) {
+    .recent_post_boxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:699px) {
+    .recent_post_boxes{
+        display: grid;
+    }
+    .recent_text>button{
+        width: 100%;
+    }
+}
 
 
 
