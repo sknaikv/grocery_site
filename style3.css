@@ -1476,6 +1476,7 @@ footer>hr {
     .hero_right {
         margin: auto;
         width: 45%;
+        margin-top: 4rem;
     }
 
     .hero_banners {
@@ -1490,22 +1491,48 @@ footer>hr {
         /* border: 1px solid blue; */
     }
 
-
-
 }
+
+
+@media screen and (max-width:940px) {
+    .img_text{
+        padding-right: 5rem!important;
+    }
+}
+
+
+
 @media screen and (max-width:900px) {
     .hero_banners{
         display: none;
+    }
+
+    .hero_right{
+        width: auto;
     }
 }
 
 @media screen and (max-width:700px) {
     .hero_left {
 
-        margin: 5rem auto 0 auto;
+        margin: 0rem auto 0 auto;
 
     }
 
+    .img_text{
+        padding-right: 0rem!important;
+    }
+
+    .top_hero_text{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .top_hero_text>svg{
+        width: 100%;
+        height: auto;
+    }
     
 }
 
@@ -1519,6 +1546,62 @@ footer>hr {
     .top_hero_text>svg{
         width: 100%;
         height: auto;
+    }
+
+    .img1>img{
+        width: 100%;
+        height: auto;
+        margin: 5rem auto;
+        opacity: 0.5;
+        /* display: none; */
+    }
+
+    .mid_hero_text>button{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .right_img>img{
+        height: 60%;
+        width: 100%;
+    }
+
+    .img1{
+        /* width: 50%; */
+        /* border: 1px solid red; */
+    }
+
+    .hero_right{
+        margin-top: 1rem;
+        /* border: 1px solid red; */
+    }
+
+    .hero_left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .img_text{
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #hero_section{
+        margin-top: 5rem!important;
+        margin-bottom: -20rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .mid_hero_text>p{
+        padding-right: 0!important;
+    }
+    .mid_hero_text>h1{
+        padding-right: 0;
     }
 }
 
@@ -1882,8 +1965,21 @@ footer>hr {
         justify-content: center;
         width: 80%;
     }
+    .img_text{
+        padding-right: 10rem;
+    }
+
+    .hero_left{
+        width: 100%;
+    }
+    .mid_hero_text>p{
+        padding-right: 10rem;
+    }
 }
 
+@media screen and (max-width:900px) {
+
+}
 
 
 
