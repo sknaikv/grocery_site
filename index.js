@@ -93,3 +93,22 @@ function toggleAccordion(panelToActivate) {
 }
 
 
+
+// loader
+
+// var loader = document.getElementById("loader-container");
+
+// var myinterval = setInterval(loader,5000);
+
+// function loader() {
+//   window.addEventListener("load",function(){
+//     loader.style.display="none";
+//   })
+// }
+
+
+
+
+
+
+

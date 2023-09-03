@@ -676,6 +676,13 @@ a{
     align-items: center;
     transition: all 0.5s;
     animation: fade 0.8s;
+    display: none;
+
+}
+
+#loader-container>img{
+    max-width: 20rem;
+    min-width: 15rem;
 }
 
 @keyframes fade {
