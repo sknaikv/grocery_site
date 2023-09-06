@@ -7,23 +7,23 @@ const about_container = document.querySelector(".about-container");
 const close_btn_about = document.querySelector(".close-btn-about");
 const browse_category = document.querySelector(".browse_category");
 const accordian = document.querySelector(".accordion");
-const browse_category_after = window.getComputedStyle(browse_category,'::after'); 
+const browse_category_after = window.getComputedStyle(browse_category, '::after');
 
-menubtn.addEventListener("click",()=>{
-    about_container.classList.toggle("active");
-    top_about_wrapper.classList.add("animate");
-    mid_about_wrapper.classList.add("animate");
-    bottom_about_wrapper.classList.add("animate");
-    accordian.classList.add("animate");
+menubtn.addEventListener("click", () => {
+  about_container.classList.toggle("active");
+  top_about_wrapper.classList.add("animate");
+  mid_about_wrapper.classList.add("animate");
+  bottom_about_wrapper.classList.add("animate");
+  accordian.classList.add("animate");
 })
 
 
-close_btn_about.addEventListener("click",()=>{
-    top_about_wrapper.classList.remove("animate");
-    mid_about_wrapper.classList.remove("animate");
-    bottom_about_wrapper.classList.remove("animate");
-    about_container.classList.remove("active");
-    accordian.classList.remove("animate");
+close_btn_about.addEventListener("click", () => {
+  top_about_wrapper.classList.remove("animate");
+  mid_about_wrapper.classList.remove("animate");
+  bottom_about_wrapper.classList.remove("animate");
+  about_container.classList.remove("active");
+  accordian.classList.remove("animate");
 })
 
 
@@ -48,8 +48,8 @@ close_btn_about.addEventListener("click",()=>{
 // const hiddenelements = document.querySelectorAll(".active");
 
 
-const observer = new IntersectionObserver(entries =>{
-    
+const observer = new IntersectionObserver(entries => {
+
 })
 
 
@@ -91,6 +91,51 @@ function toggleAccordion(panelToActivate) {
       .setAttribute("aria-hidden", false);
   }
 }
+
+const workobserver = document.querySelector('.counter_container');
+const observer2 = new IntersectionObserver((entries,observer) => {
+
+  const [entry] = entries;
+  console.log(entry);
+
+
+ if(!entry.isIntersecting) return;
+
+ //counter_number-page4
+
+ const counternum = document.querySelectorAll(".counter-numbers");
+
+ const speed = 5;
+
+ counternum.forEach((curElem) => {
+   const updatenum = () => {
+     const targetnum = parseInt(curElem.dataset.number);
+     // console.log(targetnum);
+     const initialnum = parseInt(curElem.innerText);
+     // console.log(initialnum);
+
+     const incrementnum = Math.trunc(targetnum / speed);
+     // console.log(incrementnum);
+
+
+     if (initialnum < targetnum) {
+       curElem.innerText = `${initialnum + incrementnum}+`;
+
+       setTimeout(updatenum, 130);
+     }
+   };
+   observer.unobserve(workobserver);
+   updatenum();
+ });
+
+},{
+  root: null,
+  threshold: 1,
+});
+
+observer2.observe(workobserver);
+
+
 
 
 
