@@ -920,9 +920,25 @@ body {
     border: 10px solid #fff;
 }
 
+.hero_left_btns>.user{
+    display: flex;
+    justify-content: end;
+    
+}
 
+.hero_left_btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-
+.hero_left_btns>.user>.text{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    margin-left: 1rem;
+    justify-content: center;
+}
 
 
 
