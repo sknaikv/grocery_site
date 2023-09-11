@@ -702,9 +702,10 @@ body {
     width: 25vw;
     max-width: 30vw;
     min-width: 25vw;
-    height: 70vh;
+    height: auto;
     border-radius: 0.3rem;
     margin: 0 .8rem;
+    padding: 3rem 0;
     position: relative;
     right: 0;
     /* border: 1px solid red; */
@@ -870,13 +871,13 @@ body {
 .exp_section{
     width: 100%;
     height: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .exp_content{
     width: 80%;
     height: 100%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     margin: auto;
 }
@@ -917,7 +918,7 @@ body {
     text-align: center;
     top: 30px;
     right: 0;
-    border: 10px solid #fff;
+    /* border: 10px solid #fff; */
 }
 
 .hero_left_btns>.user{
@@ -940,7 +941,47 @@ body {
     justify-content: center;
 }
 
+.exp_bar{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    margin:4rem auto 0 auto;
+    width: 83%;
+    height: auto;
+    padding: 1.5rem;
+    border-radius: 0.35rem;
+    background-color: #191D28;
+}
 
+.exp_bar_col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp_bar_col>img{
+    width: fit-content;
+    height: fit-content;
+}
+
+.exp_bar_col>.text{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    margin-left: 1rem;
+    line-height: 1.8;
+    font-family: Poppins;
+}
+
+.exp_bar_col>.text>p{
+    color: rgb(143, 143, 143);
+    font-size: .8rem;
+}
+
+.exp_bar_col>.text>h3{
+    color: white;
+    font-size: 1rem;
+}
 
 /* recent_posts */
 
@@ -1453,7 +1494,11 @@ footer>hr {
 
 }
 
-
+@media screen and (max-width:1078px) and (min-width:900px){
+    .leaf{
+        left: 15rem;
+    }
+}
 
 
 @media screen and (max-width:940px) {
