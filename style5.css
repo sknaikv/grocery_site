@@ -12,7 +12,8 @@ body {
     list-style: none;
     overflow-x: hidden;
     animation: body_animate 1s linear;
-    background-color: #FAFAFA;
+    background-color: #F4F6F8;
+
 }
 
 @keyframes body_animate {
@@ -460,6 +461,7 @@ body {
     background-color: #fff;
     /* color: white; */
     margin-top: -5.6rem;
+    padding-bottom: 10rem;
     background-image: url(./img/misc/bg-shape.png);
 }
 
@@ -515,6 +517,12 @@ body {
 
 .left_content{
     padding-top: 10rem;
+}
+
+.left_content>img{
+    position: absolute;
+    bottom: -10rem;
+    animation: leaf_animate 10s linear infinite;
 }
 
 .hero_left>.left_content>h1{
@@ -724,6 +732,7 @@ body {
 
 .backdrop2{
     display: flex;
+    width: auto !important;
     margin: auto;
     padding-top: 2rem;
     position: relative;
@@ -823,9 +832,10 @@ body {
     border-radius: 50%;
     background-color: black;
     cursor: pointer;
+    transition: all .2s;
 }
 
-.slider_btn>.circle_flat{
+.circle:hover{
     cursor: pointer;
     margin: 0 .2rem;
     width: 28px;
@@ -833,6 +843,87 @@ body {
     border-radius: 5rem;
     background-color: #EC092C;
 }
+
+.owl-dots{
+    
+}
+
+.owl-dot{
+    /* margin: 0 .2rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    transition: all .2s; */
+}
+
+.circle:hover,
+.circle.active{
+    background-color: #EC092C;
+}
+
+
+
+/* 25wxp */
+
+.exp_section{
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
+}
+
+.exp_content{
+    width: 80%;
+    height: 100%;
+    border: 1px solid blue;
+    display: flex;
+    margin: auto;
+}
+
+.exp_content>.left>img{
+    border-radius: 0.35rem;
+}
+
+
+.exp_content>.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6rem 0 6rem;
+}
+
+.exp_content>.right>h5{
+    font-family: Poppins;
+    color: #EC092C;
+}
+
+.exp_content>.right>h2{
+    font-family: Poppins;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin: .8rem 0;
+}
+.exp_content>.right>p{
+    font-family: Poppins;
+    color: #444444a1;
+    margin-bottom: 2.5rem;
+}
+
+.exp{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    top: 30px;
+    right: 0;
+    border: 10px solid #fff;
+}
+
+
+
+
+
 
 
 /* recent_posts */

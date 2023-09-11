@@ -13,6 +13,9 @@
         href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Cedarville+Cursive&family=Comfortaa:wght@300&family=Hind:wght@300&family=IBM+Plex+Sans&family=Josefin+Sans:wght@100&family=Mulish:wght@300;400;500;700&family=Pattaya&family=Poppins:wght@200;500&family=Roboto&family=Roboto+Slab:wght@300;400&family=Satisfy&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap"
         rel="stylesheet">
     <script src="./index.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 
 <body>
@@ -362,6 +365,7 @@
             <div class="hero_left">
                 <div class="left_content">
 
+                    <img src="./img/shapes/mango.png" alt="">
                     <h1>Meat Production</h1>
                     <h1>Leading Firm</h1>
                     <p>Distinctively integrate interoperable total linkage and covalent processes Seamlessly generate.
@@ -406,9 +410,9 @@
             </div>
 
             <div class="meat_cat_slider">
-                <div class="meat_boxes">
+                <div class="meat_boxes owl-carousel">
                     <div class="fresh_chicken">
-                        <img src="./img/misc/overlay-bg.png" alt="">
+                        <img class="backdrop" src="./img/misc/overlay-bg.png" alt="">
                         <img class="backdrop2" src="./img/misc/icon-1 (1).png" alt="">
 
                         <div class="text">
@@ -425,7 +429,7 @@
                     </div>
                     <div class="fresh_chicken">
                         <img class="backdrop" src="./img/misc/overlay-bg.png" alt="">
-                         <img class="backdrop2" src="./img/misc/icon-2.png" alt="">
+                        <img class="backdrop2" src="./img/misc/icon-2.png" alt="">
 
                         <div class="text">
                             <h2>Fresh Chicken</h2>
@@ -441,7 +445,7 @@
                     </div>
                     <div class="fresh_chicken">
                         <img class="backdrop" src="./img/misc/overlay-bg.png" alt="">
-                         <img class="backdrop2" src="./img/misc/icon-3.png" alt="">
+                        <img class="backdrop2" src="./img/misc/icon-3.png" alt="">
 
                         <div class="text">
                             <h2>Fresh Chicken</h2>
@@ -457,7 +461,7 @@
                     </div>
                     <div class="fresh_chicken">
                         <img class="backdrop" src="./img/misc/overlay-bg.png" alt="">
-                        <img class="backdrop2"  src="./img/misc/icon-1 (1).png" alt="">
+                        <img class="backdrop2" src="./img/misc/icon-1 (1).png" alt="">
 
                         <div class="text">
                             <h2>Fresh Chicken</h2>
@@ -473,7 +477,7 @@
                     </div>
                     <div class="fresh_chicken">
                         <img class="backdrop" src="./img/misc/overlay-bg.png" alt="">
-                         <img class="backdrop2" src="./img/misc/icon-2.png" alt="">
+                        <img class="backdrop2" src="./img/misc/icon-2.png" alt="">
 
                         <div class="text">
                             <h2>Fresh Chicken</h2>
@@ -489,7 +493,7 @@
                     </div>
                     <div class="fresh_chicken">
                         <img class="backdrop" src="./img/misc/overlay-bg.png" alt="">
-                         <img class="backdrop2" src="./img/misc/icon-3.png" alt="">
+                        <img class="backdrop2" src="./img/misc/icon-3.png" alt="">
 
                         <div class="text">
                             <h2>Fresh Chicken</h2>
@@ -505,7 +509,7 @@
                     </div>
                     <div class="fresh_chicken">
                         <img class="backdrop" src="./img/misc/overlay-bg.png" alt="">
-                         <img class="backdrop2" src="./img/misc/icon-3.png" alt="">
+                        <img class="backdrop2" src="./img/misc/icon-3.png" alt="">
 
                         <div class="text">
                             <h2>Fresh Chicken</h2>
@@ -522,7 +526,7 @@
                 </div>
 
                 <div class="slider_btn">
-                    <div class="circle_flat"></div>
+                    <!-- <div class="circle_flat"></div> -->
                     <div class="circle"></div>
                     <div class="circle"></div>
                     <div class="circle"></div>
@@ -532,6 +536,33 @@
 
         </div>
 
+        <div class="exp_section">
+            <div class="exp_content">
+
+                <div class="left">
+                    <img src="./img/misc/about-us.jpg" alt="">
+                </div>
+
+                <div class="right">
+                    <h5>Quality Is Our Power</h5>
+                    <h2>Let us Make the World
+                        <br> Better <span style="color: #EC092C;">Meat time</span> 
+                    </h2>
+                    <p>Monotonectally promote proactive technologies with high standards in manufactured products.
+                        Continually enhance reliable total linkage and team building core competencies for best quality.
+                    </p>
+                    <div class="hero_left_btns">
+                        <button>
+                            Shop Now
+                            <i style="font-weight: 600; font-size: 1;" class="ri-arrow-right-line"></i>
+                        </button>
+
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
 
 
         <div class="recent_post_wrapper">
@@ -711,6 +742,34 @@
         </div>
 
     </div>
+
+
+
+
+    <script>
+        $(".meat_boxes").owlCarousel({
+            // margin: 10,
+            loop: true,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            Responsive: {
+                0: {
+                    item: 1,
+                    nav: false,
+                },
+                700: {
+                    item: 2,
+                    nav: false,
+                },
+                1000: {
+                    item: 3,
+                    nav: false,
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
