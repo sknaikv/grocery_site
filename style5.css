@@ -525,7 +525,7 @@ body {
     animation: leaf_animate 10s linear infinite;
 }
 
-.hero_left>.left_content>h1,h2{
+.hero_left>.left_content>h2,h1{
     color: #191D28;
 }
 
@@ -547,6 +547,8 @@ body {
     font-size: 1.08rem;
 }
 
+
+
 .hero_left_btns>button{
     padding: 1.2rem 2.3rem;
     border: none;
@@ -565,13 +567,16 @@ body {
     background-color: #3c3f48;;
 }
 
-.hero_left_btns>button>i{
+#hero_btn>i{
+    position: relative;
     display: inline-block;
+    transition: .5s;
 }
 
-.hero_left_btns>button:hover.hero_left_btns>button>i{
+#hero_btn:hover#hero_btn>i{
     transform: rotate(-55deg);
 }
+
 
 
 .hero_right{
