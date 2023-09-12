@@ -93,42 +93,42 @@ function toggleAccordion(panelToActivate) {
 }
 
 const workobserver = document.querySelector('.counter_container');
-const observer2 = new IntersectionObserver((entries,observer) => {
+const observer2 = new IntersectionObserver((entries, observer) => {
 
   const [entry] = entries;
   console.log(entry);
 
 
- if(!entry.isIntersecting) return;
+  if (!entry.isIntersecting) return;
 
- //counter_number-page4
+  //counter_number-page4
 
- const counternum = document.querySelectorAll(".counter-numbers");
+  const counternum = document.querySelectorAll(".counter-numbers");
 
- const speed = 5;
+  const speed = 5;
 
- counternum.forEach((curElem) => {
-   const updatenum = () => {
-     const targetnum = parseInt(curElem.dataset.number);
-     // console.log(targetnum);
-     const initialnum = parseInt(curElem.innerText);
-     // console.log(initialnum);
+  counternum.forEach((curElem) => {
+    const updatenum = () => {
+      const targetnum = parseInt(curElem.dataset.number);
+      // console.log(targetnum);
+      const initialnum = parseInt(curElem.innerText);
+      // console.log(initialnum);
 
-     const incrementnum = Math.trunc(targetnum / speed);
-     // console.log(incrementnum);
+      const incrementnum = Math.trunc(targetnum / speed);
+      // console.log(incrementnum);
 
 
-     if (initialnum < targetnum) {
-       curElem.innerText = `${initialnum + incrementnum}+`;
+      if (initialnum < targetnum) {
+        curElem.innerText = `${initialnum + incrementnum}+`;
 
-       setTimeout(updatenum, 130);
-     }
-   };
-   observer.unobserve(workobserver);
-   updatenum();
- });
+        setTimeout(updatenum, 130);
+      }
+    };
+    observer.unobserve(workobserver);
+    updatenum();
+  });
 
-},{
+}, {
   root: null,
   threshold: 1,
 });
@@ -137,7 +137,33 @@ observer2.observe(workobserver);
 
 
 
+const product_btn1 = document.getElementById("btn1")
+const product_btn2 = document.getElementById("btn2")
+const product_btn3 = document.getElementById("btn3")
+const product_btn4 = document.getElementById("btn4")
+const product_btn5 = document.getElementById("btn5")
 
+
+// product_btn1.addEventListener("click", ()=>{
+//   product_btn1.classList.add("fadeactive");
+// })
+
+
+function fade(){
+  document.getElementById("product_container").classList.toggle("fadeactive");
+}
+function fade2(){
+  document.getElementById("product_container").classList.toggle("fadeactive");
+}
+function fade3(){
+  document.getElementById("product_container").classList.toggle("fadeactive");
+}
+function fade4(){
+  document.getElementById("product_container").classList.toggle("fadeactive");
+}
+function fade5(){
+  document.getElementById("product_container").classList.toggle("fadeactive");
+}
 
 // loader
 
